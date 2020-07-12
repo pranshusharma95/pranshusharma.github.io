@@ -1,0 +1,16 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign posts = paginator.posts | default: site.posts %}
+
+<div class="posts-list">
+  
+    <a href="{{ post.url | absolute_url }}">
+      <h2 class="post-title">{{ post.title }}</h2>
+
+    </a>
+    </div>
+    
